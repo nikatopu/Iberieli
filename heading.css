@@ -1,0 +1,295 @@
+/*
+    Color Codes
+*/
+
+/* :root {
+  --background-color: #faf0ff;
+  --background-color-darker: rgb(239, 233, 225);
+  --primary-color: #bda4cb;
+  --seconadry-color: #b5f47e;
+  --seconadry-color-darker: #8ec063;
+  --accent-color: #fc9f66;
+  --text-color: #15061d;
+  --active-button: #bda4cb;
+} */
+
+:root {
+  --background-color: #fffaf1;
+  --background-color-darker: #f7f2ea;
+  --primary-color: #d9993f;
+  --seconadry-color: #c4e990;
+  --accent-color: #b2d9c4;
+  --text-color: #1e1306;
+  --active-button: #d9993f;
+}
+
+/*
+  Buttons
+*/
+
+.btn-one {
+  background-color: var(--seconadry-color);
+}
+
+.btn-one:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-two:hover {
+  background-color: var(--seconadry-color);
+}
+
+.btn-two {
+  background-color: var(--accent-color);
+}
+
+.btn-three {
+  background-color: var(--primary-color);
+}
+
+.btn-three:hover {
+  background-color: var(--seconadry-color);
+}
+
+/*
+    The Heading of all the pages
+*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 2.75vmin;
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes hide_heading {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -70px;
+  }
+}
+
+@keyframes show_heading {
+  from {
+    top: -70px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.heading {
+  width: 100%;
+  background-color: var(--background-color);
+  border-bottom: 1px solid #c6c1b1;
+  height: 10svh;
+
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  z-index: 2;
+}
+
+.heading-content {
+  width: 100%;
+  margin-left: 6vmin;
+  margin-right: 6vmin;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-content > h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+}
+
+.heading-content > h1 > img {
+  margin-right: 3vmin;
+  cursor: pointer;
+  width: 55px;
+  border-radius: 25%;
+}
+
+.heading-content > ul {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 4vmin;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.heading-content > ul > li > button {
+  margin: 2vmin;
+
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 3vmin;
+}
+
+.heading-content > ul > li > button:hover:not(.active) {
+  color: var(--seconadry-color-darker);
+}
+
+.heading-content > ul > li > button.active {
+  color: var(--active-button);
+  cursor: auto;
+}
+
+.dropdown {
+  display: none;
+}
+
+/*
+  Disable the header content buttons and enable only one button
+  to show the list at 1200px
+*/
+@media screen and (max-width: 1200px) {
+  .heading {
+    height: 65px;
+  }
+
+  .heading-content > ul {
+    display: none;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Button */
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 2vmin;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 170%;
+    right: -35%;
+    align-self: center;
+    background-color: var(--background-color);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: auto;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: var(--active-button);
+  }
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+  The contact part of every page
+*/
+
+.about-info {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vmin;
+
+  margin-bottom: 0;
+  border-top: 1px solid gray;
+}
+
+.social-medias {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.one-social {
+  display: flex;
+  flex-direction: row;
+  font-size: 6vmin;
+  align-items: center;
+}
+
+.one-social > a > img {
+  width: 20vmin;
+}
+
+.one-social > p {
+  padding-left: 25px;
+}
+
+.contact-button {
+  height: 100%;
+  width: 48%;
+  font-size: 8vmin;
+  font-style: bold;
+  text-align: center;
+}
+
+.contact-button > p {
+  margin-bottom: 8vmin;
+}
+
+.contact-button > button {
+  width: 40vmin;
+  height: 10vmin;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  color: var(--text-color);
+
+  font-size: 5vmin;
+  box-shadow: 0px 1vmin 2vmin;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-info {
+    flex-direction: column-reverse;
+  }
+
+  .contact-button {
+    width: 100%;
+  }
+
+  .social-medias {
+    width: 100%;
+    margin-top: 4vmin;
+  }
+}

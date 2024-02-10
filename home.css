@@ -1,0 +1,319 @@
+.main-text {
+  padding: 4vmin;
+  padding-top: 2svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-text > h1 {
+  text-align: center;
+}
+
+/*
+  Photos with the button on the left side
+*/
+
+.big-photo-button-left {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5vmin;
+}
+
+.big-photo-button-left > img {
+  width: 100%;
+  height: 86svh;
+  object-fit: fill;
+  border-radius: 35px;
+  box-shadow: 0px 1vmin 2vmin;
+  border: 1px solid black;
+}
+
+.big-photo-button-left > button {
+  position: absolute;
+  bottom: 5vmin;
+  left: 5vmin;
+  width: 40vmin;
+  height: 10vmin;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  color: var(--text-color);
+
+  font-size: 5vmin;
+  box-shadow: 0px 1vmin 2vmin;
+  cursor: pointer;
+}
+
+.big-photo-button-left > p {
+  position: absolute;
+  right: 8vmin;
+  bottom: 0vmin;
+  font-size: 12vmin;
+  color: var(--background-color);
+  width: 140vmin;
+  text-align: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-text {
+    padding: 0vmin;
+  }
+
+  .big-photo-button-left > img {
+    border-radius: 0px;
+    height: 90svh;
+    width: min-content;
+    align-self: center;
+  }
+
+  .big-photo-button-left > p {
+    font-size: 11vmin;
+    width: 80vmin;
+    top: 0;
+  }
+
+  .big-photo-button-left {
+    overflow-x: hidden;
+    margin-bottom: -2px;
+  }
+}
+
+/*
+  Photos with the button on the right side
+*/
+
+.big-photo-button-right {
+  position: relative;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 5vmin;
+}
+
+.big-photo-button-right > img {
+  width: 100%;
+  height: auto;
+  border-radius: 35px;
+  box-shadow: 0px 1vmin 2vmin;
+  border: 1px solid black;
+}
+
+.big-photo-button-right > button {
+  position: absolute;
+  bottom: 5vmin;
+  right: 5vmin;
+  width: 40vmin;
+  height: 10vmin;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  color: var(--text-color);
+
+  font-size: 5vmin;
+  box-shadow: 0px 1vmin 2vmin;
+  cursor: pointer;
+}
+
+.big-photo-button-right > p {
+  position: absolute;
+  left: 8vmin;
+  bottom: 0vmin;
+  font-size: 12vmin;
+  color: var(--background-color);
+  width: 100vmin;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-text {
+    padding: 0vmin;
+  }
+
+  .big-photo-button-right > img {
+    border-radius: 0px;
+    width: 200%;
+    width: 200%;
+    position: relative;
+  }
+
+  .big-photo-button-right > p {
+    font-size: 11vmin;
+    width: 80vmin;
+    top: 0;
+  }
+
+  .big-photo-button-right {
+    overflow-x: hidden;
+  }
+}
+
+/*
+  Photo and buttons
+*/
+
+.photo-and-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 15px;
+}
+
+.photo-and-buttons > img {
+  width: 55vmin;
+  height: 55vmin;
+  border-radius: 25px;
+  box-shadow: 0px 1vmin 2vmin;
+  margin-top: 4vmin;
+  margin-bottom: 4vmin;
+  border: 1px solid black;
+}
+
+.text-and-buttons {
+  margin: 4vmin;
+  color: var(--text-color);
+  font-size: 8vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.buttons > button {
+  width: 40vmin;
+  height: 10vmin;
+
+  border-radius: 20px;
+  border: 1px solid black;
+
+  color: var(--text-color);
+
+  font-size: 5vmin;
+  box-shadow: 0px 1vmin 2vmin;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .photo-and-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column-reversed {
+    flex-direction: column-reverse;
+  }
+
+  .buttons > button {
+    width: 30vmin;
+  }
+
+  .buttons {
+    width: 90%;
+  }
+  /* .text-and-buttons {
+    font-size: 5vmin;
+  } */
+}
+
+/*
+  Wines and their descriptions
+*/
+.checkout {
+  font-size: 4vmin;
+  margin-top: 4vmin;
+  margin-bottom: 0;
+}
+
+.checkout > h1 {
+  margin-bottom: 0;
+}
+
+.bottles {
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  width: 100%;
+  height: 400px;
+  margin: 15px;
+}
+
+.bottles-scroll {
+  display: flex;
+  flex-direction: row;
+}
+
+.one-wine {
+  position: relative;
+  border-radius: 25px;
+  width: 15.5vw;
+  overflow: hidden;
+  box-shadow: 0px 1vmin 2vmin;
+  margin: 50px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.one-wine > img {
+  width: 15.5vw;
+}
+
+.wine-desc {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  height: 75px;
+  font-size: 2vmin;
+  border-top: 1px solid black;
+}
+
+.one-wine:hover > .wine-desc {
+  background-color: var(--seconadry-color);
+}
+
+.wine-desc > h2 {
+  margin: 0px;
+  margin-top: 2vmin;
+}
+
+@media screen and (max-width: 1200px) {
+  .bottles {
+    background-color: var(--background-color-darker);
+  }
+
+  .one-wine {
+    width: 200px;
+  }
+
+  .one-wine > img {
+    width: 200px;
+  }
+
+  .wine-desc {
+    font-size: 100%;
+  }
+
+  .wine-desc > p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .wine-desc {
+    font-size: larger;
+  }
+
+  .wine-desc > p {
+    display: block;
+  }
+}

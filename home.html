@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iberieli natural wine business family winery topuridze"
+    />
+    <link rel="icon" type="image/png" href="Photos/Iberieli Logo.jpg" />
+    <link rel="stylesheet" href="heading.css" />
+    <script src="heading.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <title>Iberieli Home</title>
+  </head>
+  <body>
+    <div class="heading" id="heading">
+      <div class="heading-content">
+        <h1>
+          <img
+            alt="logo"
+            src="Photos/Logo Only.png"
+            onclick="switch_pages('home.html')"
+          />
+          Iberieli
+        </h1>
+        <ul>
+          <li>
+            <button
+              type="button"
+              class="active"
+              onclick="switch_pages('home.html')"
+            >
+              Home
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./wines.html')">
+              Wines
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./album.html')">
+              Album
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./about.html')">
+              About Us
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./contact.html')">
+              Contact Us
+            </button>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img
+            alt="dropdown"
+            onclick="open_dropdown()"
+            class="dropbtn"
+            src="Photos/dropdown_png.png"
+          />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="wines.html">Wines</a>
+            <a href="album.html">Album</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-text">
+      <div class="big-photo-button-left">
+        <img alt="wines" src="Photos/Wines 1.jpg" />
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('wines.html')"
+        >
+          Wines
+        </button>
+        <p>Back to the basics and restart winemaking!</p>
+      </div>
+      <div class="photo-and-buttons">
+        <img alt="first wine" src="Photos/Nika, Ioane, Pirveli botli.jpg" />
+        <div class="text-and-buttons">
+          <p>We maintain authentic tradition of winemaking in Georgia</p>
+          <div class="buttons">
+            <button
+              class="btn-two"
+              type="button"
+              onclick="switch_pages('album.html')"
+            >
+              Photos
+            </button>
+            <button
+              class="btn-three"
+              type="button"
+              onclick="switch_pages('about.html')"
+            >
+              About us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="big-photo-button-right">
+        <img alt="wines" src="Photos/grape 1 smaller.jpg" />
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('album.html')"
+        >
+          Photos
+        </button>
+        <p>Best photos of Guria and Kakheti!</p>
+      </div>
+      <div class="photo-and-buttons column-reversed">
+        <div class="text-and-buttons">
+          <p>We produce natural wines from Georgian native grape varieties</p>
+          <div class="buttons">
+            <button
+              class="btn-two"
+              type="button"
+              onclick="switch_pages('album.html')"
+            >
+              Photos
+            </button>
+            <button
+              class="btn-three"
+              type="button"
+              onclick="switch_pages('about.html')"
+            >
+              About us
+            </button>
+          </div>
+        </div>
+        <img alt="first wine" src="Photos/Vkreft.jpg" />
+      </div>
+      <div class="checkout">
+        <h1>Check out our wines!</h1>
+      </div>
+
+      <div class="bottles">
+        <div class="bottles-scroll">
+          <div
+            class="one-wine"
+            onclick="switch_pages('/Wine Descriptions/Chkhaveri.html')"
+          >
+            <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
+            <div class="wine-desc">
+              <h2>Chkhaveri</h2>
+              <p>wine description</p>
+            </div>
+          </div>
+          <div class="one-wine" onclick="switch_pages('wines.html')">
+            <img alt="wine logo" src="Photos/Etiquettes/Golden blend.jpg" />
+            <div class="wine-desc">
+              <h2>Golden Blend</h2>
+              <p>wine description</p>
+            </div>
+          </div>
+          <div class="one-wine" onclick="switch_pages('wines.html')">
+            <img alt="wine logo" src="Photos/Etiquettes/Saperavi.jpg" />
+            <div class="wine-desc">
+              <h2>Saperavi</h2>
+              <p>wine description</p>
+            </div>
+          </div>
+          <div class="one-wine" onclick="switch_pages('wines.html')">
+            <img alt="wine logo" src="Photos/Etiquettes/Mtsvane.jpg" />
+            <div class="wine-desc">
+              <h2>Mtsvane</h2>
+              <p>wine description</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="big-photo-button-left">
+        <img alt="wines" src="Photos/Friends and family.jpg" />
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('about.html')"
+        >
+          About us
+        </button>
+        <p>We set standards in natural winemaking!</p>
+      </div>
+    </div>
+    <div class="about-info">
+      <div class="social-medias">
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="facebook logo" src="Photos/Facebook logo.png"
+          /></a>
+          <p>Catch up to our newest updates and stories!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="youtube logo" src="Photos/Youtube Logo.png"
+          /></a>
+          <p>Watch the process of wine making and brewing!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="instagram" src="Photos/insta logo.png"
+          /></a>
+          <p>Scroll through our beautiful vineyard!</p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <p>We present unique Natural Wines to customers and wine lovers!</p>
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('contact.html')"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
