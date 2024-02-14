@@ -7,6 +7,9 @@
       name="description"
       content="Iberieli natural wine business family winery topuridze"
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
     <link rel="icon" type="image/png" href="Photos/Iberieli Logo.jpg" />
     <link rel="stylesheet" href="heading.css" />
     <script src="heading.js"></script>
@@ -20,32 +23,36 @@
           <img
             alt="logo"
             src="Photos/Logo Only.png"
-            onclick="switch_pages('home')"
+            onclick="switch_pages('home.html')"
           />Iberieli
         </h1>
         <ul>
           <li>
-            <button type="button" onclick="switch_pages('home')">Home</button>
+            <button type="button" onclick="switch_pages('home.html')">
+              Home
+            </button>
           </li>
           <li>
             <button
               type="button"
               class="active"
-              onclick="switch_pages('wines')"
+              onclick="switch_pages('wines.html')"
             >
               Wines
             </button>
           </li>
           <li>
-            <button type="button" onclick="switch_pages('album')">Album</button>
+            <button type="button" onclick="switch_pages('album.html')">
+              Album
+            </button>
           </li>
           <li>
-            <button type="button" onclick="switch_pages('about')">
+            <button type="button" onclick="switch_pages('about.html')">
               About Us
             </button>
           </li>
           <li>
-            <button type="button" onclick="switch_pages('contact')">
+            <button type="button" onclick="switch_pages('contact.html')">
               Contact Us
             </button>
           </li>
@@ -59,11 +66,11 @@
           />
 
           <div id="myDropdown" class="dropdown-content">
-            <a href="home">Home</a>
-            <a href="wines">Wines</a>
-            <a href="album">Album</a>
-            <a href="about">About Us</a>
-            <a href="contact">Contact Us</a>
+            <a href="home.html">Home</a>
+            <a href="wines.html">Wines</a>
+            <a href="album.html">Album</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
           </div>
         </div>
       </div>
@@ -71,47 +78,47 @@
     <div class="wines">
       <div
         class="one-wine"
-        onclick='switch_pages("Wine Descriptions/Chkhaveri")'
+        onclick='switch_pages("Wine Descriptions/Chkhaveri.html")'
       >
         <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
         <div class="wine-desc">
           <h2>Chkhaveri</h2>
-          <p>wine description</p>
+          <p>Pale rosé, clear appearance. <b>Read More...</b></p>
         </div>
       </div>
       <div
         class="one-wine"
-        onclick='switch_pages("Wine Descriptions/Chkhaveri")'
+        onclick='switch_pages("Wine Descriptions/Golden Blend.html")'
       >
-        <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
+        <img alt="wine logo" src="Photos/Etiquettes/Golden Blend.jpg" />
         <div class="wine-desc">
-          <h2>Chkhaveri</h2>
-          <p>wine description</p>
+          <h2>Golden Blend</h2>
+          <p>Light amber, pale lemon. <b>Read More...</b></p>
         </div>
       </div>
       <div
         class="one-wine"
-        onclick='switch_pages("Wine Descriptions/Chkhaveri")'
+        onclick='switch_pages("Wine Descriptions/Saperavi.html")'
       >
-        <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
+        <img alt="wine logo" src="Photos/Etiquettes/Saperavi.jpg" />
         <div class="wine-desc">
-          <h2>Chkhaveri</h2>
-          <p>wine description</p>
+          <h2>Saperavi</h2>
+          <p>Light red, electric ruby. <b>Read More...</b></p>
         </div>
       </div>
       <div
         class="one-wine"
-        onclick='switch_pages("Wine Descriptions/Chkhaveri")'
+        onclick='switch_pages("Wine Descriptions/Mtsvane.html")'
       >
-        <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
+        <img alt="wine logo" src="Photos/Etiquettes/Mtsvane.jpg" />
         <div class="wine-desc">
-          <h2>Chkhaveri</h2>
-          <p>wine description</p>
+          <h2>Mtsvane</h2>
+          <p>Light amber, orange gold. <b>Read More...</b></p>
         </div>
       </div>
       <div
         class="one-wine"
-        onclick='switch_pages("Wine Descriptions/Chkhaveri")'
+        onclick='switch_pages("Wine Descriptions/Chkhaveri.html")'
       >
         <img alt="wine logo" src="Photos/Etiquettes/Chkhaveri.jpg" />
         <div class="wine-desc">
@@ -152,7 +159,11 @@
       </div>
       <div class="contact-button">
         <p>We present unique Natural Wines to customers and wine lovers!</p>
-        <button type="button" class="btn-two" onclick="switch_pages('contact')">
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('contact.html')"
+        >
           Contact us
         </button>
       </div>

@@ -64,6 +64,8 @@ body {
 
   max-width: 100%;
   overflow-x: hidden;
+
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes hide_heading {
@@ -227,6 +229,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4vmin;
+  height: 100svh;
 
   margin-bottom: 0;
   border-top: 1px solid gray;
@@ -254,15 +257,20 @@ body {
 }
 
 .contact-button {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   width: 48%;
   font-size: 8vmin;
   font-style: bold;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-button > p {
   margin-bottom: 8vmin;
+  font-weight: 500;
 }
 
 .contact-button > button {
