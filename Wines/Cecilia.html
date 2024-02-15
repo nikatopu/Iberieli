@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iberieli natural wine business family winery topuridze"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="icon" type="image/png" href="../Photos/Iberieli Logo.jpg" />
+    <link rel="stylesheet" href="../heading.css" />
+    <link rel="stylesheet" href="wineinfo.css" />
+    <script src="../heading.js"></script>
+    <title>Iberieli | Wines - Cecilia</title>
+  </head>
+  <body>
+    <div class="heading" id="heading">
+      <div class="heading-content">
+        <h1>
+          <img
+            alt="logo"
+            src="../Photos/Logo Only.png"
+            onclick="switch_pages('../Home.html')"
+          />Iberieli
+        </h1>
+        <ul>
+          <li>
+            <button type="button" onclick="switch_pages('../Home.html')">
+              Home
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Wines.html')">
+              Wines
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Album.html')">
+              Album
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../About.html')">
+              About Us
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Contact.html')">
+              Contact Us
+            </button>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img
+            alt="dropdown"
+            onclick="open_dropdown()"
+            class="dropbtn"
+            src="../Photos/dropdown_png.png"
+          />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../Home.html">Home</a>
+            <a href="../Wines.html">Wines</a>
+            <a href="../Album.html">Album</a>
+            <a href="../About.html">About Us</a>
+            <a href="../Contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wine-info">
+      <img src="../Photos/Etiquettes/Cecilia.jpg" alt="Wine Etiquette" />
+      <h2>Cecilia</h2>
+      <p>
+        &emsp;<b>Description:</b>
+        Water white to pale lemon, clear, clear appearance. Aroma is moderate to
+        high intensity; pine tree, apple, citruses and slight smokiness noticed.
+        Taste of softness, grapefruit, citruses. Moderate to long finish.
+      </p>
+      <p>&emsp;<b>Grape/Blend:</b> 50% Rkatsiteli, 50% Mtsvane.</p>
+      <p>
+        &emsp;<b>Food recommendations:</b>
+        Light cheese, Khachapuri, fried chicken, beef.
+      </p>
+      <p>
+        &emsp;<b>Terroir:</b>
+        Teliani appellation. Soil is stony alluvium, brownish grey, with sandy
+        loam and calcium content (PH 8.5). Gentle slope (3%), exposure to
+        south-east.
+      </p>
+
+      <p>
+        &emsp;<b>Viticulture:</b>
+        Trellis, vertical shoot positioning, grown mainly on bilateral cordons
+        or arched canes. One year old seedlings planted end of 2014. Density:
+        3800 saplings/hectare.
+      </p>
+
+      <p>
+        &emsp;<b>Yields:</b> approximately 25 hectolitres (wine) per hectare.
+      </p>
+    </div>
+    <div class="about-info">
+      <div class="social-medias">
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="facebook logo" src="../Photos/Facebook logo.png"
+          /></a>
+          <p>Catch up to our newest updates and stories!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="youtube logo" src="../Photos/Youtube Logo.png"
+          /></a>
+          <p>Watch the process of wine making and brewing!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="instagram" src="../Photos/insta logo.png"
+          /></a>
+          <p>Scroll through our beautiful vineyard!</p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <p>We present unique Natural Wines to customers and wine lovers!</p>
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('../Contact.html')"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
