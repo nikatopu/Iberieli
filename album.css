@@ -84,3 +84,84 @@
     height: 38vw;
   }
 }
+
+/* Opening the albums */
+
+.scroller {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  position: relative;
+
+  width: 100svw;
+  height: 100svh;
+
+  background-color: black;
+}
+
+.scroller > img {
+  max-width: 80svw;
+  max-height: 95svh;
+
+  object-fit: contain;
+
+  border-radius: 25px;
+
+  cursor: pointer;
+}
+
+.switch,
+.close {
+  position: absolute;
+
+  width: 8svh;
+  height: 8svh;
+  background-color: black;
+
+  border-color: transparent;
+  border-radius: 50%;
+
+  text-align: center;
+  font-size: 5svh;
+  color: var(--background-color);
+  cursor: pointer;
+}
+
+.switch:hover,
+.close:hover {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.close {
+  left: 2svh;
+  top: 2svh;
+}
+
+.left,
+.right {
+  top: 44svh;
+
+  width: 12svh;
+  height: 12svh;
+
+  font-size: 8svh;
+}
+
+.left {
+  left: 5svh;
+}
+
+.right {
+  right: 5svh;
+}
+
+@media screen and (max-width: 1200px) {
+  .left,
+  .right {
+    top: auto;
+    bottom: 5svh;
+  }
+}

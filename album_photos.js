@@ -14,8 +14,9 @@ function show_images(list) {
     image.id = the_directory;
     image.classList.add("small");
     image.onclick = function () {
-      var collection = Array.from(document.getElementsByClassName("big"));
-      open(the_directory);
+      // var collection = Array.from(document.getElementsByClassName("big"));
+      // open(the_directory);
+      open_image(album_array.indexOf(item));
     };
     image.classList.add(item.type);
     container.appendChild(image);
@@ -142,4 +143,78 @@ if (parts > 1) {
   show_images_and_buttons(new_array, parts, current_page);
 } else {
   show_images(album_array);
+}
+
+/*
+  Open the image
+*/
+var current_body_inner = document.getElementById("body").innerHTML;
+var opened_index = 0;
+
+function open_image(index) {
+  // Save the body's innerhtml and empty it
+  var current_body = document.getElementById("body");
+  current_body_inner = current_body.innerHTML;
+  current_body.innerHTML = "";
+
+  // Display only the image
+  var the_img_div = document.createElement("div");
+  the_img_div.classList.add("scroller");
+
+  var the_img = document.createElement("img");
+  var direct = "Photos/Album Photos/" + album_array[index].photo + ".jpg";
+  the_img.src = direct;
+  the_img.alt = direct;
+  the_img.onclick = function () {
+    if (index < album_array.length - 1) {
+      open_image(index + 1);
+    } else {
+      open_image(0);
+    }
+  };
+  opened_index = index;
+
+  the_img_div.appendChild(the_img);
+
+  // Add buttons for switching to other images
+
+  var btn_left = document.createElement("button");
+  btn_left.innerHTML = "<";
+  btn_left.classList.add("switch");
+  btn_left.classList.add("left");
+  btn_left.onclick = function () {
+    if (index > 0) {
+      open_image(index - 1);
+    } else {
+      open_image(album_array.length - 1);
+    }
+  };
+
+  var btn_right = document.createElement("button");
+  btn_right.innerHTML = ">";
+  btn_right.classList.add("switch");
+  btn_right.classList.add("right");
+  btn_right.onclick = function () {
+    if (index < album_array.length - 1) {
+      open_image(index + 1);
+    } else {
+      open_image(0);
+    }
+  };
+
+  the_img_div.appendChild(btn_left);
+  the_img_div.appendChild(btn_right);
+
+  // Add a button to close the god damn image
+
+  var btn_close = document.createElement("button");
+  btn_close.innerHTML = "X";
+  btn_close.classList.add("close");
+  btn_close.onclick = function () {
+    location.reload();
+  };
+
+  the_img_div.appendChild(btn_close);
+
+  current_body.appendChild(the_img_div);
 }
