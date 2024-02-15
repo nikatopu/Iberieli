@@ -290,6 +290,7 @@ body {
 @media screen and (max-width: 1200px) {
   .about-info {
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .contact-button {
