@@ -271,10 +271,10 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   text-align: center;
   height: 75px;
-  font-size: 2vmin;
+  font-size: 1.75vmin;
   border-top: 1px solid black;
 }
 
