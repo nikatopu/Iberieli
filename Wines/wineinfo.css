@@ -21,7 +21,7 @@
   border-radius: 8%;
   border: 1px solid black;
 
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1200px) {

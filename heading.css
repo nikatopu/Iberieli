@@ -29,26 +29,35 @@
 
 .btn-one {
   background-color: var(--seconadry-color);
+  transition-duration: 0.25s;
 }
 
 .btn-one:hover {
   background-color: var(--accent-color);
+  transition-duration: 0.25s;
+  transform: translateY(-6px);
 }
 
 .btn-two:hover {
   background-color: var(--seconadry-color);
+  transition-duration: 0.25s;
+  transform: translateY(-6px);
 }
 
 .btn-two {
   background-color: var(--accent-color);
+  transition-duration: 0.25s;
 }
 
 .btn-three {
   background-color: var(--primary-color);
+  transition-duration: 0.25s;
 }
 
 .btn-three:hover {
   background-color: var(--seconadry-color);
+  transition-duration: 0.25s;
+  transform: translateY(-6px);
 }
 
 /*
@@ -136,6 +145,7 @@ body {
 
 .heading-content > ul > li > button {
   margin: 2vmin;
+  transition-duration: 0.1s;
 
   background-color: transparent;
   border: none;
@@ -145,7 +155,10 @@ body {
 }
 
 .heading-content > ul > li > button:hover:not(.active) {
-  color: var(--seconadry-color-darker);
+  /* color: var(--seconadry-color-darker); */
+  transition-duration: 0.1s;
+  transform: translateY(-2px);
+  border-bottom: 1px solid black;
 }
 
 .heading-content > ul > li > button.active {

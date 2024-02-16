@@ -25,7 +25,7 @@
   height: 86svh;
   object-fit: fill;
   border-radius: 35px;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   border: 1px solid black;
 }
 
@@ -42,7 +42,7 @@
   color: var(--text-color);
 
   font-size: 5vmin;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@
   width: 100%;
   height: auto;
   border-radius: 35px;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 6vmin rgba(0, 0, 0, 0.5);
   border: 1px solid black;
 }
 
@@ -112,7 +112,7 @@
   color: var(--text-color);
 
   font-size: 5vmin;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -165,7 +165,7 @@
   width: 55vmin;
   height: 55vmin;
   border-radius: 25px;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   margin-top: 4vmin;
   margin-bottom: 4vmin;
   border: 1px solid black;
@@ -198,7 +198,7 @@
   color: var(--text-color);
 
   font-size: 5vmin;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -252,11 +252,12 @@
 }
 
 .one-wine {
+  transition-duration: 0.25s;
   position: relative;
   border-radius: 25px;
   width: 15.5vw;
   overflow: hidden;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   margin: 50px;
   cursor: pointer;
   border: 1px solid black;
@@ -275,6 +276,11 @@
   height: 75px;
   font-size: 2vmin;
   border-top: 1px solid black;
+}
+
+.one-wine:hover {
+  transition-duration: 0.25s;
+  transform: translateY(-6px);
 }
 
 .one-wine:hover > .wine-desc {

@@ -11,6 +11,7 @@
 }
 
 .one-wine {
+  transition-duration: 0.25s;
   border: 0.1vw solid black;
   position: relative;
   height: 400px;
@@ -18,7 +19,7 @@
   width: 275px;
   align-self: center;
   overflow: hidden;
-  box-shadow: 0px 1vmin 2vmin;
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -30,6 +31,7 @@
 }
 
 .wine-desc {
+  transition-duration: 0.25s;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -39,9 +41,14 @@
   font-size: 2vmin;
   border-top: 0.1vw solid black;
 }
+.one-wine:hover {
+  transition-duration: 0.25s;
+  transform: translateY(-6px);
+}
 
 .one-wine:hover > .wine-desc {
   background-color: var(--seconadry-color);
+  transition-duration: 0.25s;
 }
 
 .wine-desc > h2 {
