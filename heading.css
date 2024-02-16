@@ -15,13 +15,23 @@
 
 :root {
   --background-color: #fffaf1;
+  --background-color-darker: #ebe5dc;
+  --primary-color: #ffd57e;
+  --seconadry-color: #ce9778;
+  --accent-color: #cc5b55;
+  --text-color: #1e1306;
+  --active-button: #cc5b55;
+}
+
+/* :root {
+  --background-color: #fffaf1;
   --background-color-darker: #f7f2ea;
   --primary-color: #d9993f;
   --seconadry-color: #c4e990;
   --accent-color: #b2d9c4;
   --text-color: #1e1306;
   --active-button: #d9993f;
-}
+} */
 
 /*
   Buttons
@@ -98,7 +108,7 @@ body {
 .heading {
   width: 100%;
   background-color: var(--background-color);
-  border-bottom: 1px solid #c6c1b1;
+  border-bottom: 1px solid var(--background-color-darker);
   height: 10svh;
 
   display: flex;
