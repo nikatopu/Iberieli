@@ -28,7 +28,7 @@
 .wine-info > button {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5px;
 
   width: 15svw;
   height: 5svw;
