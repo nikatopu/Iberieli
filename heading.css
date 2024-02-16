@@ -13,17 +13,17 @@
   --active-button: #bda4cb;
 } */
 
-:root {
-  --background-color: #fffaf1;
-  --background-color-darker: #ebe5dc;
-  --primary-color: #ffd57e;
-  --seconadry-color: #ce9778;
-  --accent-color: #cc706c;
-  --text-color: #1e1306;
-  --active-button: #cc706c;
-}
-
 /* :root {
+  --background-color: #f6fdff;
+  --background-color-darker: #e6edef;
+  --primary-color: #0fcdf5;
+  --seconadry-color: #ea7cfa;
+  --accent-color: #f2d6fd;
+  --text-color: #1e1306;
+  --active-button: #0fcdf5;
+} */
+
+:root {
   --background-color: #fffaf1;
   --background-color-darker: #f7f2ea;
   --primary-color: #d9993f;
@@ -31,12 +31,12 @@
   --accent-color: #b2d9c4;
   --text-color: #1e1306;
   --active-button: #d9993f;
-} */
+}
 
 /*
   Buttons
 */
-
+/* 
 .btn-one {
   background-color: var(--seconadry-color);
   transition-duration: 0.25s;
@@ -46,10 +46,10 @@
   background-color: var(--accent-color);
   transition-duration: 0.25s;
   transform: translateY(-6px);
-}
+} */
 
 .btn-two:hover {
-  background-color: var(--seconadry-color);
+  box-shadow: 0 16px 25px var(--accent-color);
   transition-duration: 0.25s;
   transform: translateY(-6px);
 }
@@ -65,7 +65,7 @@
 }
 
 .btn-three:hover {
-  background-color: var(--seconadry-color);
+  box-shadow: 0 16px 25px var(--primary-color);
   transition-duration: 0.25s;
   transform: translateY(-6px);
 }
