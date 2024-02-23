@@ -26,7 +26,7 @@
   object-fit: fill;
   border-radius: 35px;
   box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
-  border: 1px solid black;
+  border-color: transparent;
 }
 
 .big-photo-button-left > button {
@@ -37,7 +37,7 @@
   height: 10vmin;
 
   border-radius: 20px;
-  border: 1px solid black;
+  border-color: transparent;
 
   color: var(--text-color);
 
@@ -96,7 +96,7 @@
   height: auto;
   border-radius: 35px;
   box-shadow: 0px 0.5vmin 6vmin rgba(0, 0, 0, 0.5);
-  border: 1px solid black;
+  border-color: transparent;
 }
 
 .big-photo-button-right > button {
@@ -107,7 +107,7 @@
   height: 10vmin;
 
   border-radius: 20px;
-  border: 1px solid black;
+  border-color: transparent;
 
   color: var(--text-color);
 
@@ -168,7 +168,7 @@
   box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   margin-top: 4vmin;
   margin-bottom: 4vmin;
-  border: 1px solid black;
+  border-color: transparent;
 }
 
 .text-and-buttons {
@@ -193,7 +193,7 @@
   height: 10vmin;
 
   border-radius: 20px;
-  border: 1px solid black;
+  border-color: transparent;
 
   color: var(--text-color);
 
@@ -260,7 +260,7 @@
   box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
   margin: 50px;
   cursor: pointer;
-  border: 1px solid black;
+  border-color: transparent;
 }
 
 .one-wine > img {

@@ -20,7 +20,7 @@
   float: left;
   width: 50svh;
   border-radius: 8%;
-  border: 1px solid black;
+  border-color: transparent;
 
   box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
 }

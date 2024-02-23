@@ -12,7 +12,7 @@
 
 .one-wine {
   transition-duration: 0.25s;
-  border: 0.1vw solid black;
+  border-color: transparent;
   position: relative;
   height: 400px;
   border-radius: 25px;
@@ -44,6 +44,7 @@
 .one-wine:hover {
   transition-duration: 0.25s;
   transform: translateY(-6px);
+  box-shadow: 0px 0px 25px var(--seconadry-color);
 }
 
 .one-wine:hover > .wine-desc {

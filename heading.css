@@ -49,7 +49,7 @@
 } */
 
 .btn-two:hover {
-  box-shadow: 0 16px 25px var(--accent-color);
+  box-shadow: 0 0px 25px 5px var(--accent-color);
   transition-duration: 0.25s;
   transform: translateY(-6px);
 }
@@ -65,7 +65,7 @@
 }
 
 .btn-three:hover {
-  box-shadow: 0 16px 25px var(--primary-color);
+  box-shadow: 0 0px 25px 5px var(--primary-color);
   transition-duration: 0.25s;
   transform: translateY(-6px);
 }
@@ -301,7 +301,7 @@ body {
   height: 10vmin;
 
   border-radius: 20px;
-  border: 1px solid black;
+  border-color: transparent;
 
   color: var(--text-color);
 
