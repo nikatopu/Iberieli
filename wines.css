@@ -38,7 +38,7 @@
   background-color: var(--accent-color);
   text-align: center;
   height: 75px;
-  font-size: 2vmin;
+  font-size: 12px;
   border-top: 0.1vw solid black;
 }
 .one-wine:hover {
@@ -55,6 +55,12 @@
 .wine-desc > h2 {
   margin: 0px;
   margin-top: 2vmin;
+}
+
+@media screen and (min-width: 1600px) {
+  .wine-desc > p {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1200px) {
