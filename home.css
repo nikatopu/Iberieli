@@ -33,7 +33,7 @@
   position: absolute;
   bottom: 5vmin;
   left: 5vmin;
-  width: 40vmin;
+  width: 20svw;
   height: 10vmin;
 
   border-radius: 20px;
@@ -78,6 +78,10 @@
     overflow-x: hidden;
     margin-bottom: -2px;
   }
+
+  .big-photo-button-left > button {
+    width: 40svw;
+  }
 }
 
 /*
@@ -103,7 +107,7 @@
   position: absolute;
   bottom: 5vmin;
   right: 5vmin;
-  width: 40vmin;
+  width: 20svw;
   height: 10vmin;
 
   border-radius: 20px;
@@ -147,6 +151,10 @@
   .big-photo-button-right {
     overflow-x: hidden;
   }
+
+  .big-photo-button-right > button {
+    width: 40svw;
+  }
 }
 
 /*
@@ -189,7 +197,7 @@
 }
 
 .buttons > button {
-  width: 40vmin;
+  width: 15svw;
   height: 10vmin;
 
   border-radius: 20px;
@@ -219,9 +227,10 @@
   .buttons {
     width: 90%;
   }
-  /* .text-and-buttons {
-    font-size: 5vmin;
-  } */
+
+  .buttons > button {
+    font-size: 4svw;
+  }
 }
 
 /*
@@ -317,9 +326,5 @@
 @media screen and (max-width: 800px) {
   .wine-desc {
     font-size: larger;
-  }
-
-  .wine-desc > p {
-    display: block;
   }
 }
