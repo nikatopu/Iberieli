@@ -25,6 +25,66 @@
   height: 80svh;
 }
 
+.box {
+  width: 100svw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.box > * {
+  width: 50svw;
+}
+
+@media screen and (max-width: 1200px) {
+  .box {
+    display: inline-block;
+    width: 100svw;
+  }
+
+  .box > * {
+    width: auto;
+  }
+
+  .box > .photo {
+    float: left;
+    margin: 3svw;
+  }
+
+  .box > .text {
+    font-size: 4svw;
+  }
+
+  .box > .text > .h1 {
+    float: right;
+  }
+
+  .reverse {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .reverse > .photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .reverse > .text {
+    width: 100%;
+    display: block;
+  }
+
+  .reverse > .text > h1 {
+    /* float: right; */
+    width: 50%;
+    margin-left: 42svw;
+    margin-top: 12svw;
+    margin-bottom: 12svw;
+  }
+}
+
 /* Photos */
 
 .photo {
@@ -50,7 +110,7 @@
 }
 
 .rectangle {
-  width: 55svw;
+  width: 50svw;
   height: 35svw;
 }
 
@@ -73,17 +133,4 @@
 /* Responsivness */
 
 @media screen and (max-width: 1200px) {
-  .about-us {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .about-us > * {
-    width: 100%;
-    height: auto;
-  }
-
-  .text {
-    font-size: 6svw;
-  }
 }
