@@ -92,13 +92,13 @@ body {
     top: 0px;
   }
   to {
-    top: -70px;
+    top: -11svh;
   }
 }
 
 @keyframes show_heading {
   from {
-    top: -70px;
+    top: -11svh;
   }
   to {
     top: 0px;

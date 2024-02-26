@@ -35,7 +35,7 @@ window.onscroll = function () {
     document.getElementById("heading").style.top = "0px";
   } else {
     document.getElementById("heading").style.animationName = "hide_heading";
-    document.getElementById("heading").style.top = "-70px";
+    document.getElementById("heading").style.top = "-11svh";
   }
   prevScrollpos = currentScrollPos;
 };
