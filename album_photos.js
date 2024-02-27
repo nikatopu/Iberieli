@@ -7,7 +7,7 @@ function show_images(list) {
   main.appendChild(container);
 
   list.forEach((item, index) => {
-    var the_directory = "Photos/Album Photos/" + item.photo + ".jpg";
+    var the_directory = "Photos/Album Photos/" + item.photo + ".webp";
     const image = document.createElement("img");
     image.alt = the_directory;
     image.src = the_directory;
@@ -162,7 +162,7 @@ function open_image(index) {
   the_img_div.classList.add("scroller");
 
   var the_img = document.createElement("img");
-  var direct = "Photos/Album Photos/" + album_array[index].photo + ".jpg";
+  var direct = "Photos/Album Photos/" + album_array[index].photo + ".webp";
   the_img.src = direct;
   the_img.alt = direct;
   the_img.onclick = function () {
