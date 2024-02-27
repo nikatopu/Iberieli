@@ -1,13 +1,7 @@
 ----------------------- TO ADD -----------------------
 
-1. Sliding the photos in the album;
-2. When clicking back button while a photo is fullscreen, it should go back to the album;
-
 
 ----------------------- TO CHANGE -----------------------
 
-1. The button text is too big on iphone SE; [-------------- DONE --------------]
-2. The wine description is not seen on smaller screens; [-------------- DONE --------------]
-3. About us is too linear on smaller screens; [-------------- DONE --------------]
-4. On the final page, for smaller screens, the text is not fully shown (because of the header); [-------------- DONE --------------]
-5. The wine div size changes weirdly across devices - Make it stable; [-------------- DONE --------------]
+1. Each of the documents should be lower-cased. Must change the file names manually on Github.
+2. Each of the pages' descriptions should be different from others.
