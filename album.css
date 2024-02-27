@@ -173,9 +173,20 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
   .left,
   .right {
-    top: auto;
-    bottom: 5svh;
+    top: 0;
+    width: 50%;
+    height: 100%;
+
+    padding: 0;
+    padding-top: 60svh;
   }
 }
