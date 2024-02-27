@@ -28,11 +28,22 @@
   --background-color-darker: #f7f2ea;
   --background-color-second: #d9993f;
   --primary-color: #d9993f;
+  --seconadry-color: #bc5251;
+  --accent-color: #bc5251;
+  --text-color: #1e1306;
+  --active-button: #d9993f;
+}
+
+/* :root {
+  --background-color: #fffaf1;
+  --background-color-darker: #f7f2ea;
+  --background-color-second: #d9993f;
+  --primary-color: #d9993f;
   --seconadry-color: #c4e990;
   --accent-color: #b2d9c4;
   --text-color: #1e1306;
   --active-button: #d9993f;
-}
+} */
 
 /*
   Buttons
