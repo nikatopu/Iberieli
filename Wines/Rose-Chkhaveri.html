@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iberieli natural wine business family winery topuridze"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="icon" type="image/png" href="../Photos/Iberieli Logo.jpg" />
+    <link rel="stylesheet" href="../heading.css" />
+    <link rel="stylesheet" href="wineinfo.css" />
+    <script src="../heading.js"></script>
+    <title>Iberieli | Wines - Rose Chkhaveri</title>
+  </head>
+  <body>
+    <div class="heading" id="heading">
+      <div class="heading-content">
+        <h1>
+          <img
+            alt="logo"
+            src="../Photos/Logo Only.png"
+            onclick="switch_pages('../Home')"
+          />Iberieli
+        </h1>
+        <ul>
+          <li>
+            <button type="button" onclick="switch_pages('../Home')">
+              Home
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Wines')">
+              Wines
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Album')">
+              Album
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../About')">
+              About Us
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('../Contact')">
+              Contact Us
+            </button>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img
+            alt="dropdown"
+            onclick="open_dropdown()"
+            class="dropbtn"
+            src="../Photos/dropdown_png.png"
+          />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="../Home">Home</a>
+            <a href="../Wines">Wines</a>
+            <a href="../Album">Album</a>
+            <a href="../About">About Us</a>
+            <a href="../Contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wine-info">
+      <img src="../Photos/Etiquettes/Chkhaveri Rose.jpg" alt="Wine Etiquette" />
+      <h2>Rose Chkhaveri</h2>
+      <p>
+        &emsp;<b>Description:</b>
+        No Info.No Info.No Info.No Info.No Info.No Info.No Info.No Info.No
+        Info.No Info.No Info.No Info.No Info.No Info.No Info.No Info.No Info.No
+        Info.No Info.No Info.No Info.No Info.No Info.No Info.No Info.No Info.No
+        Info.No Info.
+      </p>
+      <p>&emsp;<b>Grape/Blend:</b> Chkhaveri 80% Jani 10% Skhilatubani 10%</p>
+      <p>
+        &emsp;<b>Food recommendations:</b>
+        No Info.
+      </p>
+      <p>
+        &emsp;<b>Terroir:</b>
+        No Info.
+      </p>
+
+      <p>
+        &emsp;<b>Viticulture:</b>
+        No Info.
+      </p>
+
+      <p>&emsp;<b>Yields:</b> No Info.</p>
+      <button class="btn-three" onclick="(location.href='../Contact')">
+        Contact to Buy
+      </button>
+    </div>
+    <div class="about-info">
+      <div class="social-medias">
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="facebook logo" src="../Photos/Facebook logo.png"
+          /></a>
+          <p>Catch up to our newest updates and stories!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="youtube logo" src="../Photos/Youtube Logo.png"
+          /></a>
+          <p>Watch the process of wine making and brewing!</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="instagram" src="../Photos/insta logo.png"
+          /></a>
+          <p>Scroll through our beautiful vineyard!</p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <p>We present unique Natural Wines to customers and wine lovers!</p>
+        <button
+          type="button"
+          class="btn-two"
+          onclick="switch_pages('../Contact')"
+        >
+          Contact us
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
