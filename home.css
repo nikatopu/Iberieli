@@ -313,25 +313,30 @@
     background-color: var(--background-color-darker);
   }
 
+  .bottles {
+    height: 350px;
+  }
+
   .one-wine {
-    width: 200px;
+    width: 155px;
+    height: 235px;
   }
 
   .one-wine > img {
-    width: 200px;
+    width: 155px;
   }
 
   .wine-desc {
     font-size: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .wine-desc > h2 {
+    margin: 0;
   }
 
   .wine-desc > p {
     display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .wine-desc {
-    font-size: larger;
   }
 }
