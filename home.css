@@ -281,7 +281,7 @@
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background-color: var(--accent-color);
+  background-color: var(--background-color-second);
   text-align: center;
   height: 75px;
   font-size: 1.75vmin;
