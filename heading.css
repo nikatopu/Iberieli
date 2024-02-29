@@ -264,7 +264,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4vmin;
-  height: 100svh;
+  height: 100lvh;
 
   margin-bottom: 0;
   border-top: 1px solid gray;
@@ -325,7 +325,7 @@ body {
 @media screen and (max-width: 1200px) {
   .about-info {
     flex-direction: column-reverse;
-    height: auto;
+    height: 102lvh;
   }
 
   .contact-button {

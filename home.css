@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* justify-content: space-evenly; */
 }
 
 .main-text > h1 {
@@ -63,13 +64,14 @@
 
   .big-photo-button-left > img {
     border-radius: 0px;
-    height: 90svh;
-    width: min-content;
-    align-self: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* align-self: center; */
   }
 
   .big-photo-button-left > p {
-    font-size: 11vmin;
+    font-size: 13vmin;
     width: 80vmin;
     top: 0;
   }
@@ -77,10 +79,14 @@
   .big-photo-button-left {
     overflow-x: hidden;
     margin-bottom: -2px;
+    height: 105lvh;
+    /* object-fit: fill; */
+    object-fit: scale-down;
   }
 
   .big-photo-button-left > button {
     width: 40svw;
+    margin-bottom: 2svh;
   }
 }
 
@@ -137,23 +143,25 @@
 
   .big-photo-button-right > img {
     border-radius: 0px;
-    width: 200%;
-    width: 200%;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .big-photo-button-right > p {
-    font-size: 11vmin;
+    font-size: 13vmin;
     width: 80vmin;
     top: 0;
   }
 
   .big-photo-button-right {
     overflow-x: hidden;
+    height: 105lvh;
   }
 
   .big-photo-button-right > button {
     width: 40svw;
+    margin-bottom: 2svh;
   }
 }
 
@@ -214,6 +222,20 @@
   .photo-and-buttons {
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .photo-and-buttons > img {
+    width: 30svh;
+    height: 30svh;
+  }
+
+  .text-and-buttons > p {
+    margin: 0px;
+    margin-bottom: 4svh;
+    font-size: 6svh;
+    /* padding: 0; */
   }
 
   .column-reversed {
@@ -221,15 +243,12 @@
   }
 
   .buttons > button {
-    width: 30vmin;
+    width: 48%;
+    font-size: 3svh;
   }
 
   .buttons {
-    width: 90%;
-  }
-
-  .buttons > button {
-    font-size: 4svw;
+    width: 100%;
   }
 }
 
@@ -330,6 +349,7 @@
     font-size: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .wine-desc > h2 {
