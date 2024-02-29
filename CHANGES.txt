@@ -1,7 +1,7 @@
------------------------ TO ADD -----------------------
-
-
 ----------------------- TO CHANGE -----------------------
 
 1. Each of the documents should be lower-cased. Must change the file names manually on Github.
+[---------- DONE ----------] 
+
 2. Each of the pages' descriptions should be different from others.
+3. The first photo of wines should be replaced with only our wines.
