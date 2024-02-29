@@ -5,3 +5,6 @@
 
 2. Each of the pages' descriptions should be different from others.
 3. The first photo of wines should be replaced with only our wines.
+4. The links don't work on the last page.
+
+ADDITIONAL: Create instagram and youtube accounts for Iberieli.
