@@ -61,8 +61,7 @@
 
 @media screen and (max-width: 1200px) {
   .main-text {
-    padding: 0vmin;
-  }
+    padding: 0vmin;  }
 
   .big-photo-button-left > img {
     border-radius: 0px;
@@ -81,7 +80,8 @@
   .big-photo-button-left {
     overflow-x: hidden;
     margin-bottom: -2px;
-    height: 105lvh;
+    height: 105svh;
+    border-radius: 0px;
     /* object-fit: fill; */
     object-fit: scale-down;
   }
@@ -143,6 +143,7 @@
 @media screen and (max-width: 1200px) {
   .main-text {
     padding: 0vmin;
+    border-radius: 0;
   }
 
   .big-photo-button-right > img {
@@ -159,7 +160,8 @@
 
   .big-photo-button-right {
     overflow-x: hidden;
-    height: 105lvh;
+    height: 105svh;
+    border-radius: 0;
     overflow: hidden;
   }
 
