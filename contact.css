@@ -20,6 +20,9 @@
   font-size: 4svh;
 }
 
+b {
+  font-size: 3vmin;
+}
 /* The image container */
 
 .image-container {

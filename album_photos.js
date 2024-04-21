@@ -75,10 +75,6 @@ var album_array = [
     type: "square-photo",
   },
   {
-    photo: "setkebi",
-    type: "rectangle-photo",
-  },
-  {
     photo: "venakhi",
     type: "rectangle-photo",
   },
@@ -105,10 +101,6 @@ var album_array = [
   {
     photo: "mtevani",
     type: "square-photo",
-  },
-  {
-    photo: "ylortebi",
-    type: "rectangle-photo",
   },
   {
     photo: "nergebi",
