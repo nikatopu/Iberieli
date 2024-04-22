@@ -71,11 +71,15 @@ var album_array = [
     type: "square-photo",
   },
   {
-    photo: "ylortebi 2",
+    photo: "Qvevri Xeshi",
     type: "square-photo",
   },
   {
     photo: "venakhi",
+    type: "rectangle-photo",
+  },
+  {
+    photo: "Kakheti Marani",
     type: "rectangle-photo",
   },
   {
@@ -107,6 +111,10 @@ var album_array = [
     type: "rectangle-photo",
   },
   {
+    photo: "Setkebi",
+    type: "rectangle-photo",
+  },
+  {
     photo: "mevluda 2",
     type: "square-photo",
   },
@@ -117,6 +125,10 @@ var album_array = [
   {
     photo: "grape 1",
     type: "rectangle-photo",
+  },
+  {
+    photo: "Mtevani 2",
+    type: "square-photo",
   },
 ];
 
@@ -205,6 +217,21 @@ function open_image(index) {
   btn_close.onclick = function () {
     location.reload();
   };
+
+  // Switching and closing using keys and the escape button
+document.addEventListener('keydown', function(event) {
+  // if (event.key === "Escape") {
+  //   location.reload();
+  // }
+
+  if (event.key === "ArrowLeft") {
+    btn_left.click();
+  }
+
+  if (event.key === "ArrowRight") {
+    btn_right.click();
+  }
+})
 
   the_img_div.appendChild(btn_close);
 
