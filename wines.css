@@ -41,9 +41,10 @@
   font-size: 12px;
   border-top: 0.1vw solid black;
 }
+
 .one-wine:hover {
   transition-duration: 0.25s;
-  transform: translateY(-6px);
+  transform: translateY(-6px) scale(1.025);
   box-shadow: 0px 0px 25px var(--seconadry-color);
 }
 
