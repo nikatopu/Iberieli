@@ -67,6 +67,7 @@
 
   .wine-info > img {
     width: 100%;
+    align-self: center;
   }
 
   .wine-info > button {
