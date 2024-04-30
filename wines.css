@@ -79,7 +79,8 @@
 
   .wine-desc {
     height: 25%;
-    font-size: 3.2svw;
+    font-size: 2.75svw;
+    margin-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;

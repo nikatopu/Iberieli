@@ -55,8 +55,8 @@
   .wine-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    font-size: 5vmin;
+    align-items: left;
+    font-size: 4.5vmin;
 
     height: auto;
   }

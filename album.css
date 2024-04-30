@@ -99,6 +99,10 @@
   align-items: center;
   justify-content: space-around;
 
+  /* overflow-x: hidden; */
+  overflow: hidden;
+  overflow-y: hidden;
+
   position: relative;
 
   width: 100svw;
@@ -173,6 +177,7 @@
 }
 
 @media screen and (max-width: 1200px) {
+
   .left {
     left: 0;
   }
@@ -180,13 +185,32 @@
   .right {
     right: 0;
   }
+
   .left,
   .right {
+    opacity: 0;
+
     top: 0;
     width: 50%;
     height: 100%;
 
     padding: 0;
     padding-top: 60svh;
+  }
+
+  .scroller {
+    height: 100svh;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  body {
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  .scroller > img {
+    width: 100svw;
+    max-width: 100%;
   }
 }

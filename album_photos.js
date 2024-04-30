@@ -233,6 +233,32 @@ document.addEventListener('keydown', function(event) {
   }
 })
 
+// Switching by swiping
+let x_start = 0;
+let x_end = 0;
+document.addEventListener('touchstart', function(event) {
+  x_start = event.changedTouches[0].screenX;
+})
+document.addEventListener('touchend', function(event) {
+  x_end = event.changedTouches[0].screenX;
+  swipe();
+  console.log("swiped");
+})
+
+function swipe() {
+  let x_change = x_end - x_start;
+  if (Math.abs(x_change) < 50) {x_change = 0;}
+
+  if (x_change > 0) {
+    btn_left.click();
+  } else if (x_change < 0) {
+    btn_right.click();
+  }
+  x_start = 0;
+  x_end = 0;
+}
+  
+
   the_img_div.appendChild(btn_close);
 
   current_body.appendChild(the_img_div);

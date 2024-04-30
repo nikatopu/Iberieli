@@ -249,6 +249,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 90%;
   }
 
   .photo-and-buttons > img {
@@ -268,11 +269,12 @@
   }
 
   .buttons > button {
-    width: 48%;
+    width: 40%;
     font-size: 3svh;
   }
 
   .buttons {
+    justify-content: space-evenly;
     width: 100%;
   }
 }
@@ -393,6 +395,8 @@
 
   .wine-desc {
     font-size: 100%;
+    bottom: 0px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
