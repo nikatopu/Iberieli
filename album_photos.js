@@ -160,6 +160,8 @@ function open_image(index) {
   var current_body = document.getElementById("body");
   current_body_inner = current_body.innerHTML;
   current_body.innerHTML = "";
+  current_body.style.height = "100svh";
+  current_body.style.overflow = "hidden";
 
   // Display only the image
   var the_img_div = document.createElement("div");
