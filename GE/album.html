@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iberieli | Album, photos of the vineyard, winery, Guria, Kakheti, Iberieli's family and even natural wine"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="icon" type="image/png" href="../Photos/Iberieli Logo.webp" />
+    <link rel="stylesheet" href="../heading.css" />
+    <link rel="stylesheet" href="../album.css" />
+    <script src="../heading.js"></script>
+    <title>იბერიელი - ალბუმი</title>
+  </head>
+  <body id="body">
+    <div class="heading" id="heading">
+      <div class="heading-content">
+        <h1>
+          <img
+            alt="logo"
+            src="../Photos/Logo Only.webp"
+            onclick="switch_pages('./home')"
+          />
+          იბერიელი
+          <img
+            style="width: 20px; border: 1px solid black; cursor: pointer; border-radius: 0; margin-left: 1svw"
+            alt="Switch to English language"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/383px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+            onclick="switch_pages('../album')"
+          />
+        </h1>
+        <ul>
+          <li>
+            <button type="button" onclick="switch_pages('./home')">მთავარი</button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./wines')">ღვინოები</button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="active"
+              onclick="switch_pages('./album')"
+            >
+              ალბუმი
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./about')">
+              ჩვენ შესახებ
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./contact')">
+              კონტაქტები
+            </button>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img
+            alt="dropdown"
+            onclick="open_dropdown()"
+            class="dropbtn"
+            src="../Photos/dropdown_png.webp"
+          />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="home">მთავარი</a>
+            <a href="wines">ღვინოები</a>
+            <a href="album">ალბუმი</a>
+            <a href="about">ჩვენ შესახებ</a>
+            <a href="contact">კონტაქტები</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="album-full" id="album-full">
+      <script src="album_photos.js"></script>
+    </div>
+    <div class="about-info">
+      <div class="social-medias">
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="facebook logo" src="../Photos/Facebook logo.webp"
+          /></a>
+          <p>იხილეთ ჩვენი უახლესი ამბები და ისტორიები</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="youtube logo" src="../Photos/Youtube Logo.webp"
+          /></a>
+          <p>უყურეთ ღვინის კეთებისა და რთველის პროცესს</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="instagram" src="../Photos/insta logo.webp"
+          /></a>
+          <p>დაათვალიერეთ ჩვენი მშვენიერი ვენახები</p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <p>მომხმარებელსა და ღვინის მოყვარულებს წარმოგიდგენთ უნიკალურ ნატურალურ ღვინოებს</p>
+        <button type="button" class="btn-two" onclick="switch_pages('./contact')">
+          კონტაქტები
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

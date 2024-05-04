@@ -1,0 +1,80 @@
+.wine-info {
+  position: relative;
+  display: inline-block;
+  font-size: larger;
+  padding: 2vw;
+
+  height: 100svh;
+  font-size: 100%;
+
+  margin-bottom: 10svh;
+}
+
+.wine-info > * {
+  margin: 0.75vw;
+  
+}
+
+.wine-info > h2 {
+  text-align: center;
+}
+
+.wine-info > img {
+  float: left;
+  width: 50svh;
+  border-radius: 8%;
+  border-color: transparent;
+
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
+  margin: 2vw;
+}
+
+.wine-info > button {
+  position: absolute;
+  right: 0;
+  top: 5px;
+
+  z-index: 100;
+
+  color: black;
+
+  width: 15svw;
+  height: 5svw;
+
+  border: transparent;
+  border-radius: 25px;
+
+  font-style: bold;
+  font-size: 1.5svw;
+
+  box-shadow: 0px 0.5vmin 4vmin rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .wine-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 4.5vmin;
+
+    height: auto;
+  }
+
+  .wine-info > * {
+    margin: 3vw;
+  }
+
+  .wine-info > img {
+    width: 100%;
+    align-self: center;
+  }
+
+  .wine-info > button {
+    position: relative;
+
+    width: 40svw;
+    height: 15svw;
+    font-size: 4.5svw;
+  }
+}

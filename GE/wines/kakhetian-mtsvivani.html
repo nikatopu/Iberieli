@@ -12,11 +12,11 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-    <link rel="icon" type="image/png" href="../Photos/Iberieli Logo.webp" />
-    <link rel="stylesheet" href="../heading.css" />
+    <link rel="icon" type="image/png" href="../../Photos/Iberieli Logo.webp" />
+    <link rel="stylesheet" href="../../heading.css" />
     <link rel="stylesheet" href="wineinfo.css" />
-    <script src="../heading.js"></script>
-    <title>Iberieli wines - Kakhetian Mtsvivani</title>
+    <script src="../../heading.js"></script>
+    <title>იბერიელის ღვინოები - კახური მცვივანი</title>
   </head>
   <body>
     <div class="heading" id="heading">
@@ -24,41 +24,41 @@
         <h1>
           <img
             alt="logo"
-            src="../Photos/Logo Only.webp"
+            src="../../Photos/Logo Only.webp"
             onclick="switch_pages('../home')"
           />
-          Iberieli
+          იბერიელი
           <img
             style="width: 20px; border: 1px solid black; cursor: pointer; border-radius: 0; margin-left: 1svw"
-            alt="ქართულზე გადაცვლა"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Flag_of_Georgia.svg/383px-Flag_of_Georgia.svg.png"
-            onclick="switch_pages('../GE/wines/kakhetian-mtsvivani')"
+            alt="Switch to English language"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/383px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+            onclick="switch_pages('../../wines/kakhetian-mtsvivani')"
           />
         </h1>
         <ul>
           <li>
             <button type="button" onclick="switch_pages('../home')">
-              Home
+              მთავარი
             </button>
           </li>
           <li>
             <button type="button" onclick="switch_pages('../wines')">
-              Wines
+              ღვინოები
             </button>
           </li>
           <li>
             <button type="button" onclick="switch_pages('../album')">
-              Album
+              ალბუმი
             </button>
           </li>
           <li>
             <button type="button" onclick="switch_pages('../about')">
-              About Us
+              ჩვენ შესახებ
             </button>
           </li>
           <li>
             <button type="button" onclick="switch_pages('../contact')">
-              Contact Us
+              კონტაქტები
             </button>
           </li>
         </ul>
@@ -67,22 +67,22 @@
             alt="dropdown"
             onclick="open_dropdown()"
             class="dropbtn"
-            src="../Photos/dropdown_png.webp"
+            src="../../Photos/dropdown_png.webp"
           />
 
           <div id="myDropdown" class="dropdown-content">
-            <a href="../home">Home</a>
-            <a href="../wines">Wines</a>
-            <a href="../album">Album</a>
-            <a href="../about">About Us</a>
-            <a href="../contact">Contact Us</a>
+            <a href="../home">მთავარი</a>
+            <a href="../wines">ღვინოები</a>
+            <a href="../album">ალბუმები</a>
+            <a href="../about">ჩვენ შესახებ</a>
+            <a href="../contact">კონტაქტები</a>
           </div>
         </div>
       </div>
     </div>
     <div class="wine-info">
-      <img src="../Photos/Etiquettes/Mtsvivani.webp" alt="Wine Etiquette" />
-      <h2>Kakhetian Mtsvivani</h2>
+      <img src="../../Photos/Etiquettes/Mtsvivani.webp" alt="Wine Etiquette" />
+      <h2>კახური მცვივანი</h2>
       <br>
       <p><b>LOCATION: </b>Village Tsinandali, Kakheti Region, Georgia</p>
       <p><b>GRAPE/BLEND:</b> Mtsvivani 100% <i>(White Grapes)</i></p>
@@ -130,7 +130,7 @@
       </p>
       <br>
       <button class="btn-three" onclick="(location.href='../contact')">
-        Contact to Buy
+        ყიდვა
       </button>
     </div>
     <div class="about-info">
@@ -140,37 +140,33 @@
             href="https://www.facebook.com/iberieliwinerypage"
             target="_blank"
             rel="noopener"
-            ><img alt="facebook logo" src="../Photos/Facebook logo.webp"
+            ><img alt="facebook logo" src="../../Photos/Facebook logo.webp"
           /></a>
-          <p>Catch up to our newest updates and stories</p>
+          <p>იხილეთ ჩვენი უახლესი ამბები და ისტორიები</p>
         </div>
         <div class="one-social">
           <a
             href="https://www.facebook.com/iberieliwinerypage"
             target="_blank"
             rel="noopener"
-            ><img alt="youtube logo" src="../Photos/Youtube Logo.webp"
+            ><img alt="youtube logo" src="../../Photos/Youtube Logo.webp"
           /></a>
-          <p>Watch the process of wine making and brewing</p>
+          <p>უყურეთ ღვინის კეთებისა და რთველის პროცესს</p>
         </div>
         <div class="one-social">
           <a
             href="https://www.facebook.com/iberieliwinerypage"
             target="_blank"
             rel="noopener"
-            ><img alt="instagram" src="../Photos/insta logo.webp"
+            ><img alt="instagram" src="../../Photos/insta logo.webp"
           /></a>
-          <p>Scroll through our beautiful vineyard</p>
+          <p>დაათვალიერეთ ჩვენი მშვენიერი ვენახები</p>
         </div>
       </div>
       <div class="contact-button">
-        <p>We present unique Natural Wines to customers and wine lovers</p>
-        <button
-          type="button"
-          class="btn-two"
-          onclick="switch_pages('../contact')"
-        >
-          Contact us
+        <p>მომხმარებელსა და ღვინის მოყვარულებს წარმოგიდგენთ უნიკალურ ნატურალურ ღვინოებს</p>
+        <button type="button" class="btn-two" onclick="switch_pages('contact')">
+          კონტაქტები
         </button>
       </div>
     </div>

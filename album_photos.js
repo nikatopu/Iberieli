@@ -8,6 +8,7 @@ function show_images(list) {
 
   list.forEach((item, index) => {
     var the_directory = "Photos/Album Photos/" + item.photo + ".webp";
+    
     const image = document.createElement("img");
     image.alt = the_directory;
     image.src = the_directory;

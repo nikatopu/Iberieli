@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Iberieli | Details about Iberieli, CEO - Zurab Topuridze, Family of Iberieli, natural wine business, winery and viineyards in Guria and Kakheti"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <link rel="icon" type="image/png" href="../Photos/Iberieli Logo.webp" />
+    <link rel="stylesheet" href="../heading.css" />
+    <link rel="stylesheet" href="../about.css" />
+    <script src="../heading.js"></script>
+    <title>იბერიელი - ჩვენ შესახებ</title>
+  </head>
+  <body>
+    <div class="heading" id="heading">
+      <div class="heading-content">
+        <h1>
+          <img
+            alt="logo"
+            src="../Photos/Logo Only.webp"
+            onclick="switch_pages('./home')"
+          />
+          იბერიელი
+          <img
+            style="width: 20px; border: 1px solid black; cursor: pointer; border-radius: 0; margin-left: 1svw"
+            alt="Switch to English language"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/383px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+            onclick="switch_pages('../about')"
+          />
+        </h1>
+        <ul>
+          <li>
+            <button type="button" onclick="switch_pages('./home')">
+              მთავარი
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./wines')">
+              ღვინეობი
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./album')">
+              ალბუმი
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="active"
+              onclick="switch_pages('./about')"
+            >
+              ჩვენ შესახებ
+            </button>
+          </li>
+          <li>
+            <button type="button" onclick="switch_pages('./contact')">
+              კონტაქტები
+            </button>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <img
+            alt="dropdown"
+            onclick="open_dropdown()"
+            class="dropbtn"
+            src="../Photos/dropdown_png.webp"
+          />
+
+          <div id="myDropdown" class="dropdown-content">
+            <a href="./home">მთავარი</a>
+            <a href="./wines">ღვინოები</a>
+            <a href="./album">ალბუმი</a>
+            <a href="./about">ჩვენ შესახებ</a>
+            <a href="./contact">კონტაქტები</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="box">
+        <div class="square photo">
+          <img
+            src="../Photos/zurab topuridze.webp"
+            alt="Photo of Zurab Topuridze"
+          />
+        </div>
+        <div class="text">
+          <h1>ზურაბ თოფურიძე</h1>
+          <h2>იბერიელის დამფუძნებელი</h2>
+          <p>
+            „იბერიელის“ მფლობელი და დირექტორი ზურაბ თოფურიძეა.
+            ის პასუხისმგებელია ბიზნეს სტრატეგიის ჩამოყალიბებაზე და ყოველ ნაბიჯის ზედამხედველობაზე.
+            მან ბევრი უცხოელი ღვინის მოყვარული გააცნო ქართული ღვინის დახვეწილ გემოს. 
+          </p>
+        </div>
+      </div>
+
+      <div class="box reverse">
+        <div class="text">
+          <h1>იბერიელის ოჯახი</h1>
+          <p>
+            შპს „იბერიელი“ არის საოჯახო ბიზნესი, რომელსაც მართავს ზურაბ თოფურიძე ღვინის 
+            ქარხნებითა და ვენახებით დასავლეთ საქართველოს გურიის რეგიონში და აღმოსავლეთ 
+            საქართველოს კახეთის რეგიონში. სახელი იბერიელი - რომელიც ზურაბის შვილებმა 
+            აირჩიეს - ეხება კავკასიის უძველეს ხალხს, რომელიც ღვინოს ამზადებდა რამდენიმე ათასი 
+            წლის წინ, ეს ადამიანები მოგვიანებით ქართველები გახდნენ და მეღვინეობის გამომგონებლებად 
+            ითვლებიან.
+          </p>
+        </div>
+        <div class="square photo">
+          <img
+            src="../Photos/Nika, Ioane, Pirveli botli.webp"
+            alt="Photo of zurab's kids and the first ever wine"
+          />
+        </div>
+      </div>
+
+      <div class="square photo">
+        <img src="../Photos/dganan.webp" alt="Honest workers of the vineyard" />
+      </div>
+      <div class="rectangle photo">
+        <img
+          src="../Photos/Friends and family clear.webp"
+          alt="Friends and family standing at a winepress"
+        />
+      </div>
+      <div class="box">
+        <div class="square photo">
+          <img src="../Photos/red wine.webp" alt="Photo of a wine glass" />
+        </div>
+        <div class="text">
+          <h1>იბერიელის ბიზნესი</h1>
+          <p>
+            ოჯახის მიზანია შეინარჩუნოს ქვევრის ღვინის დაყენების ავთენტური ტრადიცია საქართველოში, 
+            აწარმოოს უნიკალური ნატურალური ღვინოები მშობლიური ყურძნიდან და შექმნას სტანდარტები 
+            და ნამდვილი მაგალითი კოლეგებისა და მეგობრებისთვის. ბიზნესი დაიწყო ნელა, მხოლოდ 
+            რამდენიმე ყუთი ღვინის გაყიდვით, მაგრამ ოჯახმა და ახლო მეგობრებმა ერთობლივად მოახერხეს 
+            ბიზნესის განვითარება მთელს მსოფლიოში. ამჟამად იყიდება მომდევნო ქვეყნებში - <b>ამერიკა, საფრანგეთი, 
+            ბრიტანეთი, იტალია, გერმანია, ბელგია, იაპონია, ჩინეთი, ავსტრალია და საქართველო.</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="rectangle photo">
+        <img
+          src="../Photos/Wines 2.webp"
+          alt="3 of Iberieli's most popular wine bottles"
+        />
+      </div>
+      <div class="square photo">
+        <img src="../Photos/qvevri.webp" alt="A photo of an old Qvevri" />
+      </div>
+      <div class="box reverse">
+        <div class="text">
+          <h1>იბერიელის ვენახები</h1>
+          <p>
+            „იბერიელი“ ღვინოს აწარმოებს დასავლეთ საქართველოს გურიის რეგიონში 2 ჰა ვენახიდან 
+            და აღმოსავლეთ საქართველოს კახეთის რეგიონში 5,5 ჰა ვენახიდან. ნიადაგი, სოფლის 
+            მეურნეობა და ბუნება არის ის, რაც ჩვენს ვენახს და ღვინოებს განსხვავებულს, უნიკალურს 
+            ხდის. ეს ბუნების საჩუქარი არის შესანიშნავად გამოყენებული შესაძლებობა.
+          </p>
+        </div>
+        <div class="square photo">
+          <img
+            src="../Photos/venakhi.webp"
+            alt="A photo of the green vineyard of Zurab Topuridze"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="about-info">
+      <div class="social-medias">
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="facebook logo" src="../Photos/Facebook logo.webp"
+          /></a>
+          <p>იხილეთ ჩვენი უახლესი ამბები და ისტორიები</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="youtube logo" src="../Photos/Youtube Logo.webp"
+          /></a>
+          <p>უყურეთ ღვინის კეთებისა და რთველის პროცესს</p>
+        </div>
+        <div class="one-social">
+          <a
+            href="https://www.facebook.com/iberieliwinerypage"
+            target="_blank"
+            rel="noopener"
+            ><img alt="instagram" src="../Photos/insta logo.webp"
+          /></a>
+          <p>დაათვალიერეთ ჩვენი მშვენიერი ვენახები</p>
+        </div>
+      </div>
+      <div class="contact-button">
+        <p>მომხმარებელსა და ღვინის მოყვარულებს წარმოგიდგენთ უნიკალურ ნატურალურ ღვინოებს</p>
+        <button type="button" class="btn-two" onclick="switch_pages('contact')">
+          კონტაქტები
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
